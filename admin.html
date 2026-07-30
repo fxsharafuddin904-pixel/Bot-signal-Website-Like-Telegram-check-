@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Fx Sharaf AI - Admin</title>
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<video autoplay muted loop id="bgVideo">
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+<div class="admin-container">
+
+    <img src="logo.png"
+    class="logo"
+    alt="Logo">
+
+    <h1>Admin Panel</h1>
+
+    <div class="card">
+
+        <h2>Telegram Settings</h2>
+
+        <input
+        type="text"
+        id="botToken"
+        placeholder="Bot Token">
+
+        <input
+        type="text"
+        id="chatId"
+        placeholder="Chat ID">
+
+        <button
+        id="saveTelegram">
+        Save Telegram
+        </button>
+
+        <button
+        id="testTelegram">
+        Test Telegram
+        </button>
+
+        <p id="telegramConnectionStatus">
+            Disconnected
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Gemini API</h2>
+
+        <input
+        type="password"
+        id="geminiApiKey"
+        placeholder="Gemini API Key">
+
+        <input
+        type="number"
+        id="usageLimit"
+        value="5">
+
+        <button
+        id="saveConfig">
+        Save Settings
+        </button>
+
+        <button
+        id="resetConfig">
+        Reset
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>User Management</h2>
+
+        <input
+        type="email"
+        id="userEmail"
+        placeholder="User Gmail">
+
+        <button
+        id="addUser">
+        Add User
+        </button>
+
+        <button
+        id="removeUser">
+        Remove User
+        </button>
+
+    </div>
+
+</div>
+
+<script type="module"
+src="management.js"></script>
+
+</body>
+</html>
