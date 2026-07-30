@@ -1,1 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Fx Sharaf AI</title>
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<!-- Loading -->
+
+<div id="loader">
+
+<div class="loader-box">
+
+<div class="loader-circle"></div>
+
+<h2>Fx Sharaf AI</h2>
+
+<p>Loading Dashboard...</p>
+
+</div>
+
+</div>
+
+<!-- Sidebar -->
+
+<div id="sidebar">
+
+<div class="sidebar-top">
+
+<h2>Fx Sharaf AI</h2>
+
+<button id="closeSidebar">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<div class="sidebar-menu">
+
+<button id="dashboardBtn">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</button>
+
+<button id="otcBtn">
+
+<i class="fa-solid fa-chart-line"></i>
+
+OTC Analyzer
+
+</button>
+
+<button id="realBtn">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+Real Analyzer
+
+</button>
+
+<button id="futureBtn">
+
+<i class="fa-solid fa-rocket"></i>
+
+Future Signals
+
+</button>
+
+<button id="liveBtn">
+
+<i class="fa-solid fa-signal"></i>
+
+Live 24/7 Signals
+
+</button>
+
+<button id="candleBtn">
+
+<i class="fa-solid fa-fire"></i>
+
+Live 200 Candles
+
+</button>
+
+<button id="managementBtn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Management
+
+</button>
+
+<button id="adminBtn">
+
+<i class="fa-solid fa-user-shield"></i>
+
+Admin Panel
+
+</button>
+
+<button id="settingBtn">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Top Navigation -->
+
+<header>
+
+<div class="left">
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<h1>Dashboard</h1>
+
+</div>
+
+<div class="right">
+
+<button id="notificationBtn">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<button id="loginBtn">
+
+<i class="fa-solid fa-user"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!-- Dashboard -->
+
+<main id="dashboard">
+  <!-- Dashboard Home -->
+
+<section id="homeSection">
+
+<div class="welcome-card">
+
+<div class="welcome-left">
+
+<h2>Welcome to Fx Sharaf AI</h2>
+
+<p>
+
+Gemini 2.5 Flash AI Engine Connected
+
+</p>
+
+<div class="status">
+
+<span class="online-dot"></span>
+
+AI Status : Online
+
+</div>
+
+</div>
+
+<div class="welcome-right">
+
+<div class="ai-circle">
+
+FS
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Quick Stats -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3>Today's Usage</h3>
+
+<h1 id="todayUsage">
+
+0 / 5
+
+</h1>
+
+<p>Free Daily Signals</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>License</h3>
+
+<h1 id="licenseStatus">
+
+FREE
+
+</h1>
+
+<p>Upgrade Required After Limit</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>AI Engine</h3>
+
+<h1>
+
+ONLINE
+
+</h1>
+
+<p>
+
+Gemini 2.5 Flash
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Telegram</h3>
+
+<h1 id="telegramStatus">
+
+Not Connected
+
+</h1>
+
+<p>
+
+Management Required
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="action-grid">
+
+<button class="action-card"
+
+id="openOTC">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>
+
+OTC Analyzer
+
+</h3>
+
+<p>
+
+Upload OTC Chart
+
+</p>
+
+</button>
+
+<button class="action-card"
+
+id="openReal">
+
+<i class="fa-solid fa-chart-simple"></i>
+
+<h3>
+
+Real Analyzer
+
+</h3>
+
+<p>
+
+Analyze Real Market
+
+</p>
+
+</button>
+
+<button class="action-card"
+
+id="openFuture">
+
+<i class="fa-solid fa-rocket"></i>
+
+<h3>
+
+Future Signals
+
+</h3>
+
+<p>
+
+Generate AI Signals
+
+</p>
+
+</button>
+
+<button class="action-card"
+
+id="openManagement">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+<h3>
+
+Management
+
+</h3>
+
+<p>
+
+Telegram Settings
+
+</p>
+
+</button>
+
+</div>
+
+<!-- AI Engine -->
+
+<div class="engine-card">
+
+<div class="engine-left">
+
+<h2>
+
+AI Model Engine
+
+</h2>
+
+<h3>
+
+gemini-2.5-flash
+
+</h3>
+
+</div>
+
+<div class="engine-right">
+
+<div class="engine-status">
+
+Vision
+
+</div>
+
+<div class="engine-status">
+
+Gemini API
+
+</div>
+
+<div class="engine-status online">
+
+Connected
+
+</div>
+
+</div>
+
+</div>
+
+  </section>
+  <!-- ========================= -->
+<!-- OTC Analyzer Section -->
+<!-- ========================= -->
+
+<section id="otcSection" class="page-section">
+
+<div class="section-header">
+
+<h2>OTC Analyzer</h2>
+
+<p>
+Upload your OTC chart and let Fx Sharaf AI analyze it.
+</p>
+
+</div>
+
+<div class="upload-card">
+
+<label for="otcImage" class="upload-box">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<h3>Drop Your Chart To Begin</h3>
+
+<p>Click here to choose an image</p>
+
+<input
+type="file"
+id="otcImage"
+accept="image/*"
+hidden>
+
+</label>
+
+<div class="preview-box">
+
+<img
+id="otcPreview"
+src=""
+alt="Preview">
+
+</div>
+
+<button id="analyzeOTC">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Analyze Chart
+
+</button>
+
+</div>
+
+<div id="otcLoading" class="loading-card">
+
+<div class="loader-circle small"></div>
+
+<h3>Analyzing Chart...</h3>
+
+<p>Please wait a few seconds.</p>
+
+</div>
+
+<div id="otcResult" class="result-card">
+
+<div class="result-top">
+
+<h2>AI Result</h2>
+
+<span id="otcSignalBadge">
+
+WAITING
+
+</span>
+
+</div>
+
+<div class="signal-box">
+
+<h1 id="otcSignal">
+
+--
+
+</h1>
+
+</div>
+
+<div class="confidence-box">
+
+<h3>Confidence</h3>
+
+<h2 id="otcConfidence">
+
+0%
+
+</h2>
+
+</div>
+
+<div class="reason-box">
+
+<h3>Analysis</h3>
+
+<p id="otcReason">
+
+Upload a chart to receive AI analysis.
+
+</p>
+
+</div>
+
+<div class="action-buttons">
+
+<button id="copyOTC">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy Result
+
+</button>
+
+<button id="newOTC">
+
+<i class="fa-solid fa-rotate"></i>
+
+New Analysis
+
+</button>
+
+</div>
+
+</div>
+
+  </section>
+  <!-- ========================= -->
+<!-- Real Analyzer Section -->
+<!-- ========================= -->
+
+<section id="realSection" class="page-section">
+
+<div class="section-header">
+
+<h2>Real Analyzer</h2>
+
+<p>
+
+Upload your Real Market chart for AI analysis.
+
+</p>
+
+</div>
+
+<div class="upload-card">
+
+<label for="realImage" class="upload-box">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<h3>Drop Your Chart To Begin</h3>
+
+<p>Click here to choose an image</p>
+
+<input
+type="file"
+id="realImage"
+accept="image/*"
+hidden>
+
+</label>
+
+<div class="preview-box">
+
+<img
+id="realPreview"
+src=""
+alt="Preview">
+
+</div>
+
+<button id="analyzeReal">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Analyze Chart
+
+</button>
+
+</div>
+
+<div id="realLoading" class="loading-card">
+
+<div class="loader-circle small"></div>
+
+<h3>Analyzing Chart...</h3>
+
+<p>Please wait a few seconds.</p>
+
+</div>
+
+<div id="realResult" class="result-card">
+
+<div class="result-top">
+
+<h2>AI Result</h2>
+
+<span id="realSignalBadge">
+
+WAITING
+
+</span>
+
+</div>
+
+<div class="signal-box">
+
+<h1 id="realSignal">
+
+--
+
+</h1>
+
+</div>
+
+<div class="confidence-box">
+
+<h3>Confidence</h3>
+
+<h2 id="realConfidence">
+
+0%
+
+</h2>
+
+</div>
+
+<div class="reason-box">
+
+<h3>Analysis</h3>
+
+<p id="realReason">
+
+Upload a chart to receive AI analysis.
+
+</p>
+
+</div>
+
+<div class="action-buttons">
+
+<button id="copyReal">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy Result
+
+</button>
+
+<button id="newReal">
+
+<i class="fa-solid fa-rotate"></i>
+
+New Analysis
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+  <!-- ========================= -->
+<!-- Future Signals Section -->
+<!-- ========================= -->
+
+<section id="futureSection" class="page-section">
+
+<div class="section-header">
+
+<h2>Future Signals</h2>
+
+<p>
+
+Generate AI Future Signals for your selected markets.
+
+</p>
+
+</div>
+
+<div class="future-card">
+
+<div class="form-group">
+
+<label>
+
+Choose Market
+
+</label>
+
+<div class="market-select">
+
+<input
+type="text"
+id="marketSearch"
+placeholder="Search Market...">
+
+<button id="marketListBtn">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+<div id="marketList" class="market-list">
+
+<!-- Market List Here -->
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Selected Market
+
+</label>
+
+<input
+type="text"
+id="selectedMarket"
+placeholder="No Market Selected"
+readonly>
+
+</div>
+
+<div class="time-grid">
+
+<div>
+
+<label>
+
+Start Time
+
+</label>
+
+<input
+type="time"
+id="startTime">
+
+</div>
+
+<div>
+
+<label>
+
+End Time
+
+</label>
+
+<input
+type="time"
+id="endTime">
+
+</div>
+
+</div>
+
+<button id="generateFuture">
+
+<i class="fa-solid fa-bolt"></i>
+
+Generate Future Signal
+
+</button>
+
+</div>
+
+<div id="futureLoading" class="loading-card">
+
+<div class="loader-circle small"></div>
+
+<h3>Generating AI Signal...</h3>
+
+<p>Please wait...</p>
+
+</div>
+
+<div id="futureResult">
+
+<div class="future-result-card">
+
+<div class="future-top">
+
+<h2 id="futureMarket">
+
+EUR/USD OTC
+
+</h2>
+
+<span id="futureBadge">
+
+CALL
+
+</span>
+
+</div>
+
+<div class="future-body">
+
+<h1 id="futureSignal">
+
+CALL
+
+</h1>
+
+<h3 id="futureTime">
+
+00:00
+
+</h3>
+
+<h4 id="futureConfidence">
+
+Confidence : 95%
+
+</h4>
+
+<p id="futureReason">
+
+AI analysis will appear here after generation.
+
+</p>
+
+</div>
+
+<div class="future-actions">
+
+<button id="copyFuture">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy
+
+</button>
+
+<button id="sendTelegram">
+
+<i class="fa-brands fa-telegram"></i>
+
+Send Telegram
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- Management Section -->
+<!-- ========================= -->
+
+<section id="managementSection" class="page-section">
+
+<div class="section-header">
+
+<h2>Management</h2>
+
+<p>
+
+Connect your Telegram Bot for automatic signal posting.
+
+</p>
+
+</div>
+
+<div class="management-card">
+
+<div class="form-group">
+
+<label>
+
+Telegram Bot Token
+
+</label>
+
+<input
+type="password"
+id="botToken"
+placeholder="Enter Telegram Bot Token">
+
+</div>
+
+<div class="form-group">
+
+<label>
+
+Chat ID / Channel Username
+
+</label>
+
+<input
+type="text"
+id="chatId"
+placeholder="@yourchannel or Chat ID">
+
+</div>
+
+<div class="management-buttons">
+
+<button id="saveTelegram">
+
+<i class="fa-solid fa-floppy-disk"></i>
+
+Save Settings
+
+</button>
+
+<button id="testTelegram">
+
+<i class="fa-brands fa-telegram"></i>
+
+Test Telegram
+
+</button>
+
+</div>
+
+<div class="status-card">
+
+<h3>Connection Status</h3>
+
+<p id="telegramConnectionStatus">
+
+Not Connected
+
+</p>
+
+</div>
+
+<div class="test-result">
+
+<h3>Last Test</h3>
+
+<p id="telegramTestResult">
+
+No test has been performed.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ========================= -->
+<!-- Admin Panel Section -->
+<!-- ========================= -->
+
+<section id="adminSection" class="page-section">
+
+<div class="section-header">
+
+<h2>Admin License Panel</h2>
+
+<p>
+
+Manage authorized Gmail accounts and License Key.
+
+</p>
+
+</div>
+
+<div class="admin-card">
+
+<div class="form-group">
+
+<label>
+
+License Key
+
+</label>
+
+<input
+type="password"
+id="licenseKey"
+placeholder="Enter Key">
+
+<button id="verifyKey">
+
+<i class="fa-solid fa-key"></i>
+
+Verify Key
+
+</button>
+
+<p id="licenseStatus">
+
+License Not Activated
+
+</p>
+
+</div>
+
+<hr>
+
+<div class="form-group">
+
+<label>
+
+Authorized Gmail
+
+</label>
+
+<input
+type="email"
+id="newUserEmail"
+placeholder="Enter Gmail Address">
+
+</div>
+
+<div class="admin-buttons">
+
+<button id="addUser">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Add User
+
+</button>
+
+<button id="removeUser">
+
+<i class="fa-solid fa-user-minus"></i>
+
+Remove User
+
+</button>
+
+</div>
+
+<div class="user-list-card">
+
+<h3>
+
+Authorized Users
+
+</h3>
+
+<div id="userList">
+
+<p>No User Added</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- End Main -->
+<!-- ========================= -->
+
+</main>
+<!-- ========================= -->
+<!-- Login Modal -->
+<!-- ========================= -->
+
+<div id="loginModal" class="modal">
+
+<div class="modal-content">
+
+<button id="closeLogin">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+<h2>Login</h2>
+
+<p>Enter your Gmail</p>
+
+<input
+type="email"
+id="loginEmail"
+placeholder="example@gmail.com">
+
+<button id="loginNow">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+Login
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Success Popup -->
+<!-- ========================= -->
+
+<div id="successPopup" class="popup">
+
+<div class="popup-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Success</h2>
+
+<p id="popupMessage">
+
+Login Successful
+
+</p>
+
+<button id="popupClose">
+
+OK
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Notification -->
+<!-- ========================= -->
+
+<div id="notificationBox">
+
+<span id="notificationText">
+
+Welcome to Fx Sharaf AI
+
+</span>
+
+</div>
+
+<!-- ========================= -->
+<!-- Overlay -->
+<!-- ========================= -->
+
+<div id="overlay"></div>
+
+<!-- ========================= -->
+<!-- JavaScript -->
+<!-- ========================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
