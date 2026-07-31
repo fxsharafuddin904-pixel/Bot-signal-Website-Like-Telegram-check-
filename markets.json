@@ -1,1 +1,72 @@
-
+[
+    {
+        "id": 1,
+        "symbol": "EURUSD-OTC",
+        "name": "EUR/USD OTC",
+        "type": "OTC",
+        "enabled": true
+    },
+    {
+        "id": 2,
+        "symbol": "GBPUSD-OTC",
+        "name": "GBP/USD OTC",
+        "type": "OTC",
+        "enabled": true
+    },
+    {
+        "id": 3,
+        "symbol": "USDJPY-OTC",
+        "name": "USD/JPY OTC",
+        "type": "OTC",
+        "enabled": true
+    },
+    {
+        "id": 4,
+        "symbol": "AUDUSD-OTC",
+        "name": "AUD/USD OTC",
+        "type": "OTC",
+        "enabled": true
+    },
+    {
+        "id": 5,
+        "symbol": "EURUSD",
+        "name": "EUR/USD",
+        "type": "REAL",
+        "enabled": true
+    },
+    {
+        "id": 6,
+        "symbol": "GBPUSD",
+        "name": "GBP/USD",
+        "type": "REAL",
+        "enabled": true
+    },
+    {
+        "id": 7,
+        "symbol": "USDJPY",
+        "name": "USD/JPY",
+        "type": "REAL",
+        "enabled": true
+    },
+    {
+        "id": 8,
+        "symbol": "AUDUSD",
+        "name": "AUD/USD",
+        "type": "REAL",
+        "enabled": true
+    },
+    {
+        "id": 9,
+        "symbol": "BTCUSD",
+        "name": "Bitcoin",
+        "type": "CRYPTO",
+        "enabled": true
+    },
+    {
+        "id": 10,
+        "symbol": "ETHUSD",
+        "name": "Ethereum",
+        "type": "CRYPTO",
+        "enabled": true
+    }
+]
