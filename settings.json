@@ -12,12 +12,12 @@
 
     "gemini": {
         "model": "gemini-2.5-flash",
-        "apiKey": ""
+        "apiKey": "AQ.Ab8RN6IMDM-a_z4bx4oMGUMrmYuDzgMZtTLh8NHMmZXKzGX8mA"
     },
 
     "telegram": {
-        "botToken": "",
-        "chatId": ""
+        "botToken": "8747004115:AAFCna-PeLWlEqEhGV5yjRpBwPGjyQD7fOA",
+        "chatId": "-1004399158909"
     },
 
     "usage": {
