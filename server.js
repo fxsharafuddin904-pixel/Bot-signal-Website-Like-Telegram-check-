@@ -2,9 +2,12 @@ import express from "express";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
+import dotenv from "dotenv";
 
 import config from "./config.js";
 import routes from "./routes.js";
+
+dotenv.config();
 
 const app = express();
 
@@ -91,7 +94,9 @@ app.use((req, res) => {
 // Start Server
 // ==========================
 
-app.listen(config.app.port, () => {
+const PORT = process.env.PORT || config.app.port;
+
+app.listen(PORT, () => {
 
     console.log("");
 
@@ -99,7 +104,7 @@ app.listen(config.app.port, () => {
 
     console.log("🚀 Fx Sharaf AI Started");
 
-    console.log("🌐 http://localhost:" + config.app.port);
+    console.log("🌐 Running on Port: " + PORT);
 
     console.log("===================================");
 
