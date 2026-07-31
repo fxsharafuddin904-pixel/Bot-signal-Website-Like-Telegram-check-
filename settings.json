@@ -1,1 +1,38 @@
+{
+    "app": {
+        "name": "Fx Sharaf AI",
+        "version": "1.0.0",
+        "environment": "production",
+        "port": 3000
+    },
 
+    "admin": {
+        "email": "admin@gmail.com"
+    },
+
+    "gemini": {
+        "model": "gemini-2.5-flash",
+        "apiKey": ""
+    },
+
+    "telegram": {
+        "botToken": "",
+        "chatId": ""
+    },
+
+    "usage": {
+        "dailyLimit": 5
+    },
+
+    "analysis": {
+        "confidenceThreshold": 70,
+        "defaultMarket": "EURUSD-OTC"
+    },
+
+    "features": {
+        "futureSignal": true,
+        "realMarket": true,
+        "telegramNotification": true,
+        "adminPanel": true
+    }
+}
